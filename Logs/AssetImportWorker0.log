@@ -1139,3 +1139,434 @@ System memory in use after: 86.2 MB.
 Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2374.
 Total: 1.424200 ms (FindLiveObjects: 0.146900 ms CreateObjectMapping: 0.049700 ms MarkObjects: 1.153800 ms  DeleteObjects: 0.073200 ms)
 
+========================================================================
+Received Import Request.
+  Time since last request: 292.020339 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '496e71971ce78b949dc90517ab2161ce') in 0.072473 seconds
+  Import took 0.076448 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Tile/Silver Two Dirt.png
+  artifactKey: Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Dirt.png using Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c20ebd4ef63f3208ca0edbe614c9ee7c') in 0.014027 seconds
+  Import took 0.016562 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/Tile/Silver Ore Dirt.png
+  artifactKey: Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Dirt.png using Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b4bb4150bbc06929ece6763629bf93') in 0.013340 seconds
+  Import took 0.016869 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/Tile/Silver Ore Stone.png
+  artifactKey: Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Stone.png using Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9182e755043c631df305fa49347e3ef') in 0.011479 seconds
+  Import took 0.014161 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Tile/Silver Four Stone.png
+  artifactKey: Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Stone.png using Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a9705997d4bd2293634a007d0997dae') in 0.010746 seconds
+  Import took 0.014852 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Tile/Silver Ore Stone.png
+  artifactKey: Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Stone.png using Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9182e755043c631df305fa49347e3ef') in 0.031068 seconds
+  Import took 0.034088 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '534b08388602ca45a142d1d060e55229') in 0.008893 seconds
+  Import took 0.012120 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000156 seconds.
+  path: Assets/Tile/Silver Two Stone.png
+  artifactKey: Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Stone.png using Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbbb0eb3294ece552d4bb3f3e5549c9') in 0.013339 seconds
+  Import took 0.017599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/Tile/Silver Three Stone.png
+  artifactKey: Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Stone.png using Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3e34cacbba64905cdb2a459433349c8') in 0.009765 seconds
+  Import took 0.012865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.849459 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c1bf88a28ac68f9e320f022e472cbc5') in 0.007875 seconds
+  Import took 0.010724 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/Tile/Silver Two Dirt.png
+  artifactKey: Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Dirt.png using Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2f039277aff46628d0b5ee7333f8cdf') in 0.007067 seconds
+  Import took 0.009454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Tile/Silver Ore Dirt.png
+  artifactKey: Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Dirt.png using Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45226363c298c8a243c002195c113a41') in 0.006853 seconds
+  Import took 0.029795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Tile/Silver Ore Stone.png
+  artifactKey: Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Stone.png using Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21fde4b800d0e7485045afa44523bdc6') in 0.006183 seconds
+  Import took 0.008146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/Tile/Silver Four Stone.png
+  artifactKey: Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Stone.png using Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6aca6c64fa05673e898aa92c7fafd8e') in 0.012662 seconds
+  Import took 0.014967 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7e6b5a637bce4d8832f3c14b5d115b') in 0.008707 seconds
+  Import took 0.010923 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/Tile/Silver Two Stone.png
+  artifactKey: Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Stone.png using Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9f7aec35476324a3212d194dd767368') in 0.007465 seconds
+  Import took 0.009959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d7e6b5a637bce4d8832f3c14b5d115b') in 0.005501 seconds
+  Import took 0.007807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000110 seconds.
+  path: Assets/Tile/Silver Three Stone.png
+  artifactKey: Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Stone.png using Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed5757703a45bbbf5650c81bde1f60a0') in 0.006886 seconds
+  Import took 0.023379 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 97.551278 seconds.
+  path: Assets/Resources/TileTextures/TileSprites.spriteatlas
+  artifactKey: Guid(6405856d9da365d40ad575ea25749bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TileTextures/TileSprites.spriteatlas using Guid(6405856d9da365d40ad575ea25749bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Invalid sprite atlas asset encountered when matching atlas for sprite Emerald One Dirt. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald One Stone. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Two Dirt. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Two Stone. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Three Dirt. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Three Stone. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Four Dirt. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Emerald Four Stone. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Gold. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Hard Dirt 2. Please repack all your sprite atlases.
+
+Invalid sprite atlas asset encountered when matching atlas for sprite Stone Four. Please repack all your sprite atlases.
+
+ -> (artifact id: 'e11deb6e9b89652a42c0ee2a0c1c9257') in 0.012427 seconds
+  Import took 0.014833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.048031 seconds.
+  path: Assets/Resources/TileTextures/TileSprites.spriteatlas
+  artifactKey: Guid(6405856d9da365d40ad575ea25749bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources/TileTextures/TileSprites.spriteatlas using Guid(6405856d9da365d40ad575ea25749bcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e11deb6e9b89652a42c0ee2a0c1c9257') in 0.006789 seconds
+  Import took 0.009005 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000900 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.26 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.680 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.25 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1798 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.5 MB.
+System memory in use after: 89.5 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2385.
+Total: 1.840700 ms (FindLiveObjects: 0.165400 ms CreateObjectMapping: 0.058800 ms MarkObjects: 1.529300 ms  DeleteObjects: 0.085900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001169 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.683 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1798 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.6 MB.
+System memory in use after: 89.6 MB.
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 2388.
+Total: 1.714000 ms (FindLiveObjects: 0.190400 ms CreateObjectMapping: 0.055500 ms MarkObjects: 1.386200 ms  DeleteObjects: 0.080800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.908727 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98b1f038951a5c45f980f8a6c765354e') in 0.038478 seconds
+  Import took 0.041024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Tile/Silver Two Dirt.png
+  artifactKey: Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Dirt.png using Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '335eb2b425ab085797385548cc775061') in 0.004817 seconds
+  Import took 0.007795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Tile/Silver Ore Dirt.png
+  artifactKey: Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Dirt.png using Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a37a479c6bbd7100bff04c95812bfcc') in 0.007082 seconds
+  Import took 0.022940 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Tile/Silver Ore Stone.png
+  artifactKey: Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Stone.png using Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06ffbb4d28e08a32c248f50374fb34f') in 0.006708 seconds
+  Import took 0.008838 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Tile/Silver Four Stone.png
+  artifactKey: Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Stone.png using Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8022a6d15cbc8d6c912a49f1664a088') in 0.006187 seconds
+  Import took 0.008195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000109 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df30ca3b3f1982b24e5e639f50a20f06') in 0.005744 seconds
+  Import took 0.007865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000149 seconds.
+  path: Assets/Tile/Silver Two Stone.png
+  artifactKey: Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Stone.png using Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3f78100054a5a721822ac9ca2db317') in 0.004968 seconds
+  Import took 0.007149 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df30ca3b3f1982b24e5e639f50a20f06') in 0.005713 seconds
+  Import took 0.007788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000103 seconds.
+  path: Assets/Tile/Silver Two Stone.png
+  artifactKey: Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Stone.png using Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3f78100054a5a721822ac9ca2db317') in 0.007231 seconds
+  Import took 0.009550 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Tile/Silver Three Stone.png
+  artifactKey: Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Stone.png using Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3bf45bd203391520febed6b487c599') in 0.004573 seconds
+  Import took 0.006716 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.269937 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbb3f4e7c5f4d6bad309c0c408da090') in 0.006134 seconds
+  Import took 0.008334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007697 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdbb3f4e7c5f4d6bad309c0c408da090') in 0.005024 seconds
+  Import took 0.007193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.841259 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd494003f755fd70d2d9a6a676fdec9d0') in 0.004966 seconds
+  Import took 0.007060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008731 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd494003f755fd70d2d9a6a676fdec9d0') in 0.005357 seconds
+  Import took 0.007786 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001050 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.28 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.655 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.29 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1798 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.7 MB.
+
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 2394.
+Total: 1.689100 ms (FindLiveObjects: 0.189500 ms CreateObjectMapping: 0.056400 ms MarkObjects: 1.318400 ms  DeleteObjects: 0.123700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.868900 seconds.
+  path: Assets/Tile/Silver Four Dirt.png
+  artifactKey: Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Dirt.png using Guid(48aa2fd3b6cab60458f35ebe2e5d2253) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245e49338e129f8bf511eea88ef1792e') in 0.060939 seconds
+  Import took 0.064863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Tile/Silver Two Dirt.png
+  artifactKey: Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Dirt.png using Guid(ee14b6a68787b75498b72276b2afa282) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f37b0cc5188b903774fbf0f91f96d0a') in 0.010054 seconds
+  Import took 0.013086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Tile/Silver Ore Dirt.png
+  artifactKey: Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Dirt.png using Guid(eecb6d35ce1085b428ba0ede68bd2a58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e407a8f0d282c14e0f4e1e936d5663') in 0.022429 seconds
+  Import took 0.025187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000120 seconds.
+  path: Assets/Tile/Silver Ore Stone.png
+  artifactKey: Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Ore Stone.png using Guid(bf08be2ae9737524393f34f597340a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6251ad1714c02bcff14321d4f2c890c1') in 0.004898 seconds
+  Import took 0.008227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Tile/Silver Four Stone.png
+  artifactKey: Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Four Stone.png using Guid(e607943a654fa65419cc3d6b59839a91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40ee25885dad39a9128ea73f9bb2f671') in 0.006757 seconds
+  Import took 0.009086 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/Tile/Silver Three Dirt.png
+  artifactKey: Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Dirt.png using Guid(452ff4f727140a54085f575072e990b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ed47be8c9c444a2d6df26c13a05972d') in 0.006028 seconds
+  Import took 0.009652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Tile/Silver Two Stone.png
+  artifactKey: Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Two Stone.png using Guid(6bb89e95fda6b3344a79c780e49604bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123c8b45274b1490dba2aa0050321b53') in 0.013318 seconds
+  Import took 0.017405 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/Tile/Silver Three Stone.png
+  artifactKey: Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Tile/Silver Three Stone.png using Guid(7e00aa2333afce246bd4af65a660295a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5772eaeb4d6731d9add37a26273a0a2c') in 0.006773 seconds
+  Import took 0.009201 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
