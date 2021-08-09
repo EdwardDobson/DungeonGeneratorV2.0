@@ -30,11 +30,11 @@ Finally the **CLEAR ALL TILE DATAS removes the Tile Data file**.
 
 - [x] Tile Health
 
-- [ ] Tile Speed
+- [x] Tile Speed
 
-- [ ] Tile Type
+- [x] Tile Type
 
-- [ ] Tile Colour
+- [x] Tile Colour
 
 - [ ] Block Drop
 
