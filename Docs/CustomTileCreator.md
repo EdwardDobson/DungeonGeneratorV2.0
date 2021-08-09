@@ -41,3 +41,5 @@ Finally the **CLEAR ALL TILE DATAS removes the Tile Data file**.
 - [x] Tile Sprite Selection
 
 - [ ] Multiple Tile Sprites
+
+- [ ] Block Sounds
