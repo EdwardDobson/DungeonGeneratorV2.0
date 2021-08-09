@@ -4,5 +4,5 @@
  
  Pages
  
- [Custom Tile Editor](https://github.com/EdwardDobson/DungeonGeneratorV2.0/blob/main/Docs/CustomTileCreator)
+ [Custom Tile Editor](https://github.com/EdwardDobson/DungeonGeneratorV2.0/blob/main/Docs/CustomTileCreator.md)
  
