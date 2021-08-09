@@ -20,7 +20,7 @@ public class TileDetailPuller : MonoBehaviour
                 Vector3Int mousePos = new Vector3Int((int)mouseposVec2.x, (int)mouseposVec2.y, 0);
                 if (_tilePlacer._placedTiles.ContainsKey(mousePos))
                 {
-                    Debug.Log(_tilePlacer._placedTiles[mousePos].TileID + " Tile Health: " + _tilePlacer._placedTiles[mousePos].Health);
+                    Debug.Log(_tilePlacer._placedTiles[mousePos]._tileID + " Tile Health: " + _tilePlacer._placedTiles[mousePos]._health);
                 }
             }
         }

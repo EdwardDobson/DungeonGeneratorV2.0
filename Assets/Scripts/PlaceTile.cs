@@ -22,11 +22,11 @@ public class PlaceTile : MonoBehaviour
             Vector3Int mousePos = new Vector3Int((int)mouseposVec2.x, (int)mouseposVec2.y, 0);
             if(!_placer._placedTiles.ContainsKey(mousePos))
             {
-                _placedTileBase.sprite = _placer._atlas.GetSprite(_placer._allTileDatas.Tiles[0].TileName);
+                _placedTileBase.sprite = _placer._atlas.GetSprite(_placer._allTileDatas._tiles[0]._tileName);
                 _placer._map.SetTile(mousePos, _placedTileBase);
                 ModifedTile tileToAdd = new ModifedTile
                 {
-                    _tileID = _placer._allTileDatas.Tiles[0].TileID,
+                    _tileID = _placer._allTileDatas._tiles[0]._tileID,
                     _tileXPos = mousePos.x,
                     _tileYPos = mousePos.y
                 };

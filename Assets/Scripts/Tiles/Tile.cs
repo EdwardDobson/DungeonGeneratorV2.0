@@ -10,13 +10,15 @@ public enum TileType
 [Serializable]
 public class TileDG
 {
-    public string TileName;
-    public int TileID;
-    public TileType TileType;
-    public int Health;
+    public string _tileName;
+    public int _tileID;
+    public TileType _tileType;
+    public int _health;
+    public int _speed;
+    public int[] _colour = new int[4];
 }
 [Serializable]
 public class AllTiles
 {
-    public List<TileDG> Tiles = new List<TileDG>();
+    public List<TileDG> _tiles = new List<TileDG>();
 }
