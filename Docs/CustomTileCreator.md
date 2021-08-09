@@ -6,6 +6,8 @@ There are two windows, Tile Creator and Tile Editor.
 
 ## Tile Creator
 
+[Tile Creator Script](https://github.com/EdwardDobson/DungeonGeneratorV2.0/blob/main/Assets/Scripts/Tiles/TileCreator.cs)
+
 * The tile creator is used to create new custom tiles that you want to use in the generator.
 * To add new sprite options add your sprite **(64x64 + Pixels Per Unit of 64 recommended)** to the sprite atlas found at Resources/TileTextures.
 * Currently you can only change the tile health this is going to be expanded to allow for the tile type ,colour, block drop, speed and more.
@@ -14,9 +16,14 @@ There are two windows, Tile Creator and Tile Editor.
 
 ## Tile Editor
 
+[Tile Editor Script](https://github.com/EdwardDobson/DungeonGeneratorV2.0/blob/main/Assets/Scripts/TileEditor.cs)
+
 * If you have at least one tile made, opening the Tile Editor window will give you options to change the tiles variables aswell as showing its ID.
 * You can also remove the tile if you no longer need it.
 * When removing a tile all of the other tile ids will be reordered.
+
+
+[Clear Data Script](https://github.com/EdwardDobson/DungeonGeneratorV2.0/blob/main/Assets/Scripts/ClearTileDataFile.cs)
 
 Finally the **CLEAR ALL TILE DATAS removes the Tile Data file**.
 
