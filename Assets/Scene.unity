@@ -154,9 +154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _atlas: {fileID: 4343727234628468602, guid: 6405856d9da365d40ad575ea25749bcb, type: 2}
   _allTileDatas:
-    Tiles: []
+    _tiles: []
   _map: {fileID: 1419331309}
   _tilesLoaded: 0
+  _placedTileBase: {fileID: 0}
+  _tileNames: []
 --- !u!4 &1070762357
 Transform:
   m_ObjectHideFlags: 0
@@ -385,8 +387,10 @@ MonoBehaviour:
     _playerPos: []
     _tileXPos: 
     _tileYPos: 
+    _addedTiles: []
   _seed: 0
   _invalidPositions: []
+  _addedTiles: []
 --- !u!4 &1471287655
 Transform:
   m_ObjectHideFlags: 0
@@ -472,8 +476,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6b64ae12e6afd74cb18d0551143d062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlaceableTiles: []
-  _placer: {fileID: 0}
 --- !u!1 &2091335966
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,3 +616,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bb4ef9d0f1a49b4e97c4a25867d9588, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _tileInfoDebug: 0

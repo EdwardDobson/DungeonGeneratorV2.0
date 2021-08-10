@@ -16,13 +16,30 @@ public class TileEditor : EditorWindow
     static SpriteAtlas _atlas;
     static List<string> _tileTextureNames = new List<string>();
     static List<string> _tileTypeNames = new List<string>();
-    [MenuItem("Dungeon Generator Windows/Tile Editor",false, 2)]
+    static Color _newColor = new Color();
+
+    #region Tile Values
+    static int _tileHealth = new int();
+    static int _tileSpeed = new int();
+    static float _tileRarity = new float();
+    static string _tileName;
+    static TileType _tileType;
+    #endregion
+
+    [MenuItem("Dungeon Generator Windows/Tile Editor", false, 2)]
     static void Init()
     {
         _tileToChange = new TileDG();
         ReloadData();
         TileEditor window = (TileEditor)GetWindow(typeof(TileEditor));
         window.Show();
+        _tileToChange = _allTiles._tiles[_tileIndex];
+        _newColor = _tileToChange.GetTileColour();
+        _tileType = _allTiles._tiles[_tileIndex]._tileType;
+        _tileHealth = _allTiles._tiles[_tileIndex]._health;
+        _tileSpeed = _allTiles._tiles[_tileIndex]._speed;
+        _tileRarity = _allTiles._tiles[_tileIndex]._rarity;
+        _tileName = _allTiles._tiles[_tileIndex]._tileName;
     }
     private void OnFocus()
     {
@@ -36,41 +53,46 @@ public class TileEditor : EditorWindow
             {
                 if (_allTiles._tiles.Count > 0)
                 {
-                    EditorGUILayout.LabelField("Tile");
+                    EditorGUI.BeginChangeCheck();
                     _tileIndex = EditorGUILayout.Popup(_tileIndex, _tileTextureNames.ToArray());
-                    _tileToChange = _allTiles._tiles[_tileIndex];
-                    Texture2D displaySprite = _atlas.GetSprite(_allTiles._tiles[_tileIndex]._tileName).texture;
-                    EditorGUILayout.LabelField(new GUIContent(displaySprite), GUILayout.MaxWidth(100f), GUILayout.MaxHeight(100f));
+                    if(EditorGUI.EndChangeCheck())
+                    {
+                        _newColor = _allTiles._tiles[_tileIndex].GetTileColour();
+                        _tileType = _allTiles._tiles[_tileIndex]._tileType;
+                        _tileHealth = _allTiles._tiles[_tileIndex]._health;
+                        _tileSpeed = _allTiles._tiles[_tileIndex]._speed;
+                        _tileRarity = _allTiles._tiles[_tileIndex]._rarity;
+                        _tileName = _allTiles._tiles[_tileIndex]._tileName;
+                    }
+                    
+                    if (_tileName.Contains(":"))
+                    {
+                        string newTileName = _tileName.Substring(0, _tileName.IndexOf(":"));
+                        EditorFunctions.DisplaySprite(_atlas, newTileName);
+                    }
+                    else
+                    {
+                        EditorFunctions.DisplaySprite(_atlas, _tileName);
+                    }
+
                     _tileTypeIndex = EditorGUILayout.Popup("Tile Type: ", _tileTypeIndex, _tileTypeNames.ToArray());
-                    _tileToChange._tileType = (TileType)_tileTypeIndex;
-                    _tileToChange._health = EditorGUILayout.IntField("Tile Health: ", _tileToChange._health);
-                    _tileToChange._speed = EditorGUILayout.IntField("Tile Speed: ", _tileToChange._speed);
-                    ZeroValue(ref _tileToChange._speed);
-                    ZeroValue(ref _tileToChange._health);
-                    _tileToChange._colour[0] = EditorGUILayout.IntField("R: ", _tileToChange._colour[0]);
-                    _tileToChange._colour[1] = EditorGUILayout.IntField("G: ", _tileToChange._colour[1]);
-                    _tileToChange._colour[2] = EditorGUILayout.IntField("B: ", _tileToChange._colour[2]);
-                    _tileToChange._colour[3] = EditorGUILayout.IntField("A: ", _tileToChange._colour[3]);
-                    ZeroValue(ref _tileToChange._colour[0]);
-                    ZeroValue(ref _tileToChange._colour[1]);
-                    ZeroValue(ref _tileToChange._colour[2]);
-                    ZeroValue(ref _tileToChange._colour[3]);
-                    EditorGUILayout.LabelField("Tile Index: " + _tileToChange._tileID);
+                    _tileType = (TileType)_tileTypeIndex;
+                    _tileHealth = EditorGUILayout.IntField("Tile Health: ", EditorFunctions.ZeroValue(ref _tileHealth));
+                   _tileSpeed = EditorGUILayout.IntField("Tile Speed: ", EditorFunctions.ZeroValue(ref _tileSpeed));
+                    _tileRarity = EditorGUILayout.FloatField("Tile Rarity: ", EditorFunctions.ZeroValue(ref _tileRarity));
+
+                    _newColor = EditorGUILayout.ColorField("Tile Color", _newColor);
+      
+                    EditorGUILayout.LabelField("Tile Index: " + _allTiles._tiles[_tileIndex]._tileID);
+
                     if (GUILayout.Button("Save Changes"))
                     {
-                        _allTiles._tiles[_tileIndex]._health = _tileToChange._health;
-                        _allTiles._tiles[_tileIndex]._tileName = _tileToChange._tileName;
-                        _allTiles._tiles[_tileIndex]._speed = _tileToChange._speed;
-                        _allTiles._tiles[_tileIndex]._tileType = _tileToChange._tileType;
-                        _allTiles._tiles[_tileIndex]._colour[0] = _tileToChange._colour[0];
-                        _allTiles._tiles[_tileIndex]._colour[1] = _tileToChange._colour[1];
-                        _allTiles._tiles[_tileIndex]._colour[2] = _tileToChange._colour[2];
-                        _allTiles._tiles[_tileIndex]._colour[3] = _tileToChange._colour[3];
-
-
-
-                        SaveLoadTileData.SaveData(_allTiles);
-                        Debug.Log("Modifed tile: " + _tileToChange._tileName);
+                        _allTiles._tiles[_tileIndex]._health = _tileHealth;
+                        _allTiles._tiles[_tileIndex]._speed = _tileSpeed;
+                        _allTiles._tiles[_tileIndex]._rarity = _tileRarity;
+                        _allTiles._tiles[_tileIndex]._tileType = _tileType;
+                        _allTiles._tiles[_tileIndex].SetTileColour(_newColor);
+                        EditorFunctions.SaveData(_allTiles);
                     }
                     if (GUILayout.Button("Remove Tile"))
                     {
@@ -79,7 +101,7 @@ public class TileEditor : EditorWindow
                         {
                             _allTiles._tiles[i]._tileID = i;
                         }
-                        SaveLoadTileData.SaveData(_allTiles);
+                        EditorFunctions.SaveData(_allTiles);
                         ReloadData();
                     }
                 }
@@ -90,25 +112,16 @@ public class TileEditor : EditorWindow
             EditorGUILayout.LabelField("CUSTOM TILE DATA FILE DOES NOT EXIST");
         }
     }
-    void ZeroValue(ref int _value)
-    {
-        if (_value <= 0)
-        {
-            _value = 0;
-        }
-    }
     static void ReloadData()
     {
         _tileToChange = new TileDG();
         _tileTextureNames = new List<string>();
         _atlas = new SpriteAtlas();
         _atlas = Resources.Load<SpriteAtlas>("TileTextures/TileSprites");
-        _tileTextureNames = new List<string>();      
-
+    
         if (File.Exists(Application.dataPath + "/Resources/TileDatas.dat"))
         {
             BinaryFormatter bf = new BinaryFormatter();
-
             FileStream file = File.Open(Application.dataPath + "/Resources/TileDatas.dat", FileMode.Open);
             _allTiles = (AllTiles)bf.Deserialize(file);
             file.Close();
@@ -116,8 +129,7 @@ public class TileEditor : EditorWindow
             {
                 for (int i = 0; i < _allTiles._tiles.Count; i++)
                 {
-                    if (!_tileTextureNames.Contains(_allTiles._tiles[i]._tileName))
-                        _tileTextureNames.Add(_allTiles._tiles[i]._tileName);
+                    _tileTextureNames.Add(_allTiles._tiles[i]._tileName);
                 }
             }
             foreach (TileType i in Enum.GetValues(typeof(TileType)))

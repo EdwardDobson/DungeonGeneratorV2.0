@@ -13,8 +13,11 @@ public class TilePlacer : MonoBehaviour
     public Dictionary<Vector3Int, TileDG> _placedTiles = new Dictionary<Vector3Int, TileDG>();
     public Tilemap _map;
     public bool _tilesLoaded;
+    [SerializeField]
     Tile _placedTileBase;
     DungeonSave _dungeonSave;
+    [SerializeField]
+    List<string> _tileNames = new List<string>();
     void Start()
     {
         _dungeonSave = GameObject.Find("Save").GetComponent<DungeonSave>();
@@ -24,13 +27,23 @@ public class TilePlacer : MonoBehaviour
             if (_allTileDatas._tiles.Count > 0)
             {
                 _placedTileBase = ScriptableObject.CreateInstance<Tile>();
+                for (int i = 0; i < _allTileDatas._tiles.Count; i++)
+                {
+                    if (_allTileDatas._tiles[i]._tileName.Contains(":"))
+                    {
+                        _tileNames.Add(_allTileDatas._tiles[i]._tileName.Substring(0, _allTileDatas._tiles[i]._tileName.IndexOf(":")));
+                    }
+                    else
+                    {
+                        _tileNames.Add(_allTileDatas._tiles[i]._tileName);
+                    }
+                }
                 MakeSquare(100, 100);
             } 
         }
     }
     void Place(Vector3Int _location)
     {
-   
         if (!_dungeonSave._invalidPositions.Contains(_location))
         {
             int _tileID = _allTileDatas._tiles[Random.Range(0, _allTileDatas._tiles.Count)]._tileID;
@@ -38,11 +51,12 @@ public class TilePlacer : MonoBehaviour
             {
                 _health = _allTileDatas._tiles[_tileID]._health,
                 _tileID = _allTileDatas._tiles[_tileID]._tileID,
-                _tileName = _allTileDatas._tiles[_tileID]._tileName
+                _tileName = _allTileDatas._tiles[_tileID]._tileName,
             };
-            if(!_placedTiles.ContainsKey(_location))
+            if (!_placedTiles.ContainsKey(_location))
             _placedTiles.Add(_location, copy);
-            _placedTileBase.sprite = _atlas.GetSprite(copy._tileName);
+            _placedTileBase.sprite = _atlas.GetSprite(_tileNames[_tileID]);
+            _placedTileBase.color = _allTileDatas._tiles[_tileID].GetTileColour();
             _map.SetTile(_location, _placedTileBase);
         }
         for (int i = 0; i < _dungeonSave._addedTiles.Count; i++)
@@ -63,7 +77,6 @@ public class TilePlacer : MonoBehaviour
             _map.SetTile(newPos, _placedTileBase);
         }
     }
-
     void MakeSquare(int xDimension, int yDimension)
     {
         for (int x = 0; x < xDimension; x++)
