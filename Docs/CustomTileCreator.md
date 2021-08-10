@@ -36,7 +36,7 @@ Finally the **CLEAR ALL TILE DATAS removes the Tile Data file**.
 
 - [x] Tile Colour
 
-- [ ] Tile Rarity
+- [x] Tile Rarity
 
 - [ ] Block Drop
 
