@@ -11,6 +11,8 @@ public struct ModifedTile
     public int _tileID;
     public int _tileXPos;
     public int _tileYPos;
+    public int _health;
+    public string _tileName;
 }
 [Serializable]
 public struct DataToSave
@@ -20,14 +22,14 @@ public struct DataToSave
     public List<int> _tileXPos;
     public List<int> _tileYPos;
     public List<ModifedTile> _addedTiles;
-
+    public List<int> _tileXPosEmpty;
+    public List<int> _tileYPosEmpty;
 }
 public class DungeonSave : MonoBehaviour
 {
     public DataToSave _dataToSave;
     public int _seed;
     public List<Vector3Int> _invalidPositions = new List<Vector3Int>();
-    public List<ModifedTile> _addedTiles = new List<ModifedTile>();
     GameObject _player;
 
     void Awake()
@@ -36,6 +38,8 @@ public class DungeonSave : MonoBehaviour
         _player = GameObject.Find("Player");
         _dataToSave._tileXPos = new List<int>();
         _dataToSave._tileYPos = new List<int>();
+         _dataToSave._tileXPosEmpty = new List<int>();
+        _dataToSave._tileYPosEmpty = new List<int>();
         _dataToSave._addedTiles = new List<ModifedTile>();
         LoadGame();
     }
@@ -58,15 +62,12 @@ public class DungeonSave : MonoBehaviour
             file.Close();
             UnityEngine.Random.InitState(_dataToSave._seed);
             _player.transform.position = new Vector3(_dataToSave._playerPos[0], _dataToSave._playerPos[1], _dataToSave._playerPos[2]);
-            for(int i = 0; i < _dataToSave._addedTiles.Count; i++)
+            for (int i = 0; i< _dataToSave._tileXPosEmpty.Count; i++)
             {
-                _addedTiles.Add(_dataToSave._addedTiles[i]);
+                _invalidPositions.Add(new Vector3Int(_dataToSave._tileXPosEmpty[i], _dataToSave._tileYPosEmpty[i],0));
             }
-     
-            for (int i = 0; i< _dataToSave._tileXPos.Count; i++)
-            {
-                _invalidPositions.Add(new Vector3Int(_dataToSave._tileXPos[i], _dataToSave._tileYPos[i],0));
-            }
+             _dataToSave._tileXPosEmpty.Clear();
+             _dataToSave._tileYPosEmpty.Clear();
         }
         else
         {
@@ -75,6 +76,11 @@ public class DungeonSave : MonoBehaviour
     }
     void SaveGame()
     {
+        for(int i = 0 ;i < _invalidPositions.Count; i++)
+        {
+            _dataToSave._tileXPosEmpty.Add(_invalidPositions[i].x);
+             _dataToSave._tileYPosEmpty.Add(_invalidPositions[i].y);
+        }
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.dataPath + "/Resources/SaveGame.dat");
         _dataToSave._seed = _seed;
