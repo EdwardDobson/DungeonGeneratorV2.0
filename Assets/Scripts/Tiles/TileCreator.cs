@@ -13,10 +13,14 @@ public class TileCreator : EditorWindow
     static SpriteAtlas _atlas;
     static Sprite[] _tileTextures;
     static List<string> _tileTextureNames = new List<string>();
+    static List<string> _tileTypeNames = new List<string>();
     static int _tileIndex;
+    static int _tileTypeIndex;
+    static Color _newColor = new Color();
     [MenuItem("Dungeon Generator Windows/Tile Creator",false,1)]
     static void Init()
     {
+        _newColor = new Color(255,255,255,255);
         LoadData();
         TileCreator window = (TileCreator)GetWindow(typeof(TileCreator));
         window.Show();
@@ -27,26 +31,40 @@ public class TileCreator : EditorWindow
     }
     private void OnGUI()
     {
-        Texture2D displaySprite = _tileTextures[_tileIndex].texture;
         _tileIndex = EditorGUILayout.Popup(_tileIndex, _tileTextureNames.ToArray());
-        _tile.TileName = _tileTextureNames[_tileIndex];
-        EditorGUILayout.LabelField(new GUIContent(displaySprite), GUILayout.MaxWidth(100f), GUILayout.MaxHeight(100f));
-        EditorGUILayout.LabelField("Tile Health");
-        _tile.Health = EditorGUILayout.IntField(_tile.Health);
+        if (_tileTextures[_tileIndex] != null)
+        {
+            EditorFunctions.DisplaySprite(_atlas, _tileTextureNames[_tileIndex]);
+        }
+        _tile._tileName = _tileTextureNames[_tileIndex];
+        _tileTypeIndex = EditorGUILayout.Popup("Tile Type: ", _tileTypeIndex, _tileTypeNames.ToArray());
+        _tile._tileType = (TileType)_tileTypeIndex;
+        _tile._health = EditorGUILayout.IntField("Tile Health: ", EditorFunctions.ZeroValue(ref _tile._health));
+        _tile._speed = EditorGUILayout.IntField("Tile Speed: ", EditorFunctions.ZeroValue(ref _tile._speed));
+        _tile._rarity = EditorGUILayout.FloatField("Tile Rarity: ", EditorFunctions.ZeroValue(ref _tile._rarity));
+        _newColor = EditorGUILayout.ColorField("Tile Color", _newColor);
+        _tile.SetTileColour(_newColor);
+
         if (GUILayout.Button("Create New Tile"))
         {
             if (_allTiles != null)
             {
-                if (_allTiles.Tiles.Count >= 1)
-                    _tile.TileID = _allTiles.Tiles.Count;
+                if (_allTiles._tiles.Count >= 1)
+                    _tile._tileID = _allTiles._tiles.Count;
                 else
-                    _tile.TileID = 0;
-                _allTiles.Tiles.Add(_tile);
-                SaveLoadTileData.SaveData(_allTiles);
-                Debug.Log("Created new tile: " + _tile.TileName);
+                    _tile._tileID = 0;
+                for(int i = 0; i < _allTiles._tiles.Count; i++)
+                {
+                    if(_allTiles._tiles[i]._tileName.Contains(_tile._tileName))
+                    {
+                        _tile._tileName = _tile._tileName + ":" + _tile._tileID;
+                    }
+                }
+                _allTiles._tiles.Add(_tile);
+                EditorFunctions.SaveData(_allTiles);
+                Debug.Log("Created new tile: " + _tile._tileName);
                 _tile = new TileDG();
             }
-  
         }
     }
     static void LoadData()
@@ -62,6 +80,10 @@ public class TileCreator : EditorWindow
         {
             if(!_tileTextureNames.Contains(_tileTextures[i].name))
             _tileTextureNames.Add(_tileTextures[i].name.Replace("(Clone)", ""));
+        }
+        foreach (TileType i in Enum.GetValues(typeof(TileType)))
+        {
+            _tileTypeNames.Add(i.ToString());
         }
         if (File.Exists(Application.dataPath + "/Resources/TileDatas.dat"))
         {

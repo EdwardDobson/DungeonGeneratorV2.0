@@ -21,12 +21,10 @@ public class TileDestroy : MonoBehaviour
             if (_tilePlacer._placedTiles.ContainsKey(mousePos))
             {
                 TileDG copy = _tilePlacer._placedTiles[mousePos];
-                copy.Health -= _digDamage;
-                if (copy.Health <= 0)
+                copy._health -= _digDamage;
+                if (copy._health <= 0)
                 {
-                    _dungeonSave._dataToSave._tileXPos.Add(mousePos.x);
-                    _dungeonSave._dataToSave._tileYPos.Add(mousePos.y);
-                
+                    _dungeonSave._invalidPositions.Add(mousePos);
                     _tilePlacer._placedTiles.Remove(mousePos);
                     _tilePlacer._map.SetTile(mousePos, null);
                     for(int i = 0;i < _dungeonSave._dataToSave._addedTiles.Count; i++)

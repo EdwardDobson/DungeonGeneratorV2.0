@@ -14,7 +14,7 @@ public class ClearTileDataFile : EditorWindow
         AllTiles = new AllTiles();
         if (File.Exists(Application.dataPath + "/Resources/TileDatas.dat"))
         {
-            AllTiles.Tiles.Clear();
+            AllTiles._tiles.Clear();
             FileUtil.DeleteFileOrDirectory(Application.dataPath + "/Resources/TileDatas.dat");
             FileUtil.DeleteFileOrDirectory(Application.dataPath + "/Resources/TileDatas.dat.meta");
             AssetDatabase.Refresh();
